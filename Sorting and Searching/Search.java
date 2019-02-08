@@ -8,13 +8,13 @@ class Search{
 		
 		int n = s.nextInt();
 		
-		String[] a = new String[n];
+		int[] a = new int[n];
 		for(int i = 0; i <n; i ++){
-			a[i] = s.nextLine();
+			a[i] = s.nextInt();
 		}
 		
-		BinarySearch b = new BinarySearch(a);
+		InterpolationSearch b = new InterpolationSearch(a);
 		
-		System.out.println(b.search("abc"));
+		System.out.println(b.search(5));
 	}
 }
